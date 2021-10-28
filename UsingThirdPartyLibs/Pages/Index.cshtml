@@ -2,9 +2,14 @@
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var report = TempData["report"] as IReport;
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form method="post">
+        <button type="submit">Create report</button>
+    </form>
+    <p class="text-success">Report: @report?.Content</p>
 </div>

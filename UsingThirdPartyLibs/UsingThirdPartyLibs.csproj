@@ -4,4 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="ReportingLib">
+      <HintPath>..\ReportingLib\bin\Debug\net5.0\ReportingLib.dll</HintPath>
+    </Reference>
+    <Reference Include="YetOtherReportingLib">
+      <HintPath>..\YetOtherReportingLib\bin\Debug\net5.0\YetOtherReportingLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
